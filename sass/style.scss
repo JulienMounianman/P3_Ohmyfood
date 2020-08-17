@@ -1,9 +1,15 @@
+$verdatre: #0E9C66;
+$orangeatre: #EDAC00;
+$grisatre: #EAEAEA;
+$rougeatre: #FBBBBB;
+$rosatre: #FBD7F4;
+$color_box_shadow: #D8D8D8;
 body {
   height: 100vh;
   margin: 0;
   header {
     height: 10%;
-    background-color: green;
+    background-color: $verdatre;
     margin: 0;
     padding: 0;
     h1 {
@@ -11,36 +17,45 @@ body {
       text-align: center;
       margin: 0;
       padding: 0;
+      font-size: 3em;
+      margin: 0;
+      padding: 0;
+      font-family: cursive;
     }
   }
   main {
     height: 85%;
     margin: 0 0 0 0;
-    padding: 0;
+    padding: 2% 0 0 0;
     .list_menu {
-      margin: 2% 0 0 0;
+      margin: 0 0 0 0;
       height: 90%;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       background-color: white;
       article {
+        box-shadow: 3px 3px 10px 3px $color_box_shadow;
+        display: flex;
+        flex-direction: column;
+        font-family: cursive;
         h2 {
-          margin: 0;
+          margin: auto;
           padding: 0;
+          text-align: center;
         }
       }
       .menu_la_note_enchantee {
-        background-color: red;
+        background-color: $rougeatre;
         width: 40%;
         margin-right: 5%;
       }
       .menu_le_chic_a_la_francaise {
-        background-color: pink;
+        background-color: $rosatre;
         width: 40%;
       }
       .menu_le_delice_des_papilles {
-        background-color: gray;
+        background-color: $grisatre;
         width: 40%;
         margin-right: 5%;
         margin-top: 5%;
@@ -52,27 +67,45 @@ body {
       }
     }
     .soon {
-      margin: 5% 0 0 0;
       text-align: center;
-      p {
+      margin-top: 2%;
+      .button_soon {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
         color: orange;
-        padding: 0;
-        margin: 0;
+        border-radius: 10px;
+        background-color: $verdatre;
+        font-family: cursive;
+      }
+      .button_soon:hover {
+        background-color: transparentize($verdatre, 0.15);
       }
     }
   }
   footer {
     height: 5%;
     display: flex;
-    background-color: green;
+    background-color: $verdatre;
     color: orange;
     justify-content: space-between;
-    margin: 2% 0 0 0;
-    padding: 0;
-    p {
-      margin: 0;
-      padding: 0;
-      text-align: center;
+    margin: 0 0 0 0;
+    padding: 1%;
+    span {
+      display: flex;
+      a {
+        justify-content: center;
+        font-family: cursive;
+        margin: auto;
+        text-align: center;
+        color: $orangeatre;
+        text-decoration: none;
+      }
+      a:hover {
+        color: transparentize($orangeatre, 0.15);
+      }
     }
   }
 }

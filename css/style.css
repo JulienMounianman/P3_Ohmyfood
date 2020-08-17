@@ -3,37 +3,47 @@ body {
   margin: 0; }
   body header {
     height: 10%;
-    background-color: green;
+    background-color: #0E9C66;
     margin: 0;
     padding: 0; }
     body header h1 {
       color: orange;
       text-align: center;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      font-size: 3em;
+      margin: 0;
+      padding: 0;
+      font-family: cursive; }
   body main {
     height: 85%;
     margin: 0 0 0 0;
-    padding: 0; }
+    padding: 2% 0 0 0; }
     body main .list_menu {
-      margin: 2% 0 0 0;
+      margin: 0 0 0 0;
       height: 90%;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       background-color: white; }
-      body main .list_menu article h2 {
-        margin: 0;
-        padding: 0; }
+      body main .list_menu article {
+        box-shadow: 3px 3px 10px 3px #D8D8D8;
+        display: flex;
+        flex-direction: column;
+        font-family: cursive; }
+        body main .list_menu article h2 {
+          margin: auto;
+          padding: 0;
+          text-align: center; }
       body main .list_menu .menu_la_note_enchantee {
-        background-color: red;
+        background-color: #FBBBBB;
         width: 40%;
         margin-right: 5%; }
       body main .list_menu .menu_le_chic_a_la_francaise {
-        background-color: pink;
+        background-color: #FBD7F4;
         width: 40%; }
       body main .list_menu .menu_le_delice_des_papilles {
-        background-color: gray;
+        background-color: #EAEAEA;
         width: 40%;
         margin-right: 5%;
         margin-top: 5%; }
@@ -42,23 +52,38 @@ body {
         width: 40%;
         margin-top: 5%; }
     body main .soon {
-      margin: 5% 0 0 0;
-      text-align: center; }
-      body main .soon p {
+      text-align: center;
+      margin-top: 2%; }
+      body main .soon .button_soon {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
         color: orange;
-        padding: 0;
-        margin: 0; }
+        border-radius: 10px;
+        background-color: #0E9C66;
+        font-family: cursive; }
+      body main .soon .button_soon:hover {
+        background-color: rgba(14, 156, 102, 0.85); }
   body footer {
     height: 5%;
     display: flex;
-    background-color: green;
+    background-color: #0E9C66;
     color: orange;
     justify-content: space-between;
-    margin: 2% 0 0 0;
-    padding: 0; }
-    body footer p {
-      margin: 0;
-      padding: 0;
-      text-align: center; }
+    margin: 0 0 0 0;
+    padding: 1%; }
+    body footer span {
+      display: flex; }
+      body footer span a {
+        justify-content: center;
+        font-family: cursive;
+        margin: auto;
+        text-align: center;
+        color: #EDAC00;
+        text-decoration: none; }
+      body footer span a:hover {
+        color: rgba(237, 172, 0, 0.85); }
 
 /*# sourceMappingURL=style.css.map */
