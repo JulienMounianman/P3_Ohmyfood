@@ -6,7 +6,9 @@ $rosatre: #FBD7F4;
 $color_box_shadow: #D8D8D8;
 body {
   height: 100vh;
-  margin: 0;
+  width: 70%;
+  margin: auto;
+  background-color: grey;
   header {
     height: 10%;
     background-color: $verdatre;
@@ -27,6 +29,7 @@ body {
     height: 85%;
     margin: 0 0 0 0;
     padding: 2% 0 0 0;
+    background-color: white;
     .list_menu {
       margin: 0 0 0 0;
       height: 90%;
@@ -69,6 +72,7 @@ body {
     .soon {
       text-align: center;
       margin-top: 2%;
+      background-color: white;
       .button_soon {
         border: 0;
         line-height: 2.5;

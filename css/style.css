@@ -1,6 +1,8 @@
 body {
   height: 100vh;
-  margin: 0; }
+  width: 70%;
+  margin: auto;
+  background-color: grey; }
   body header {
     height: 10%;
     background-color: #0E9C66;
@@ -18,7 +20,8 @@ body {
   body main {
     height: 85%;
     margin: 0 0 0 0;
-    padding: 2% 0 0 0; }
+    padding: 2% 0 0 0;
+    background-color: white; }
     body main .list_menu {
       margin: 0 0 0 0;
       height: 90%;
@@ -53,7 +56,8 @@ body {
         margin-top: 5%; }
     body main .soon {
       text-align: center;
-      margin-top: 2%; }
+      margin-top: 2%;
+      background-color: white; }
       body main .soon .button_soon {
         border: 0;
         line-height: 2.5;
