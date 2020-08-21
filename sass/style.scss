@@ -48,17 +48,25 @@ body {
           height: 100%;
           display: flex;
           flex-direction: column;
-          font-family: cursive;
           h2 {
+            transition: all 400ms ease-in-out;
+            transform: scale(0.7);
             margin: auto;
             padding: 0;
             text-align: center;
+            font-family: 'Devonshire', cursive;
+            span {
+              font-family:cursive;
+            }
+            i {
+              color: red;
+            }
           }
         }
       }
-      a:hover {
-        width: 41%;
-        height: auto;
+      a:hover h2 {
+        transform: scale(1);
+        opacity: 0.5;
       }
       .menu_la_note_enchantee {
         background-color: $rougeatre;
@@ -90,7 +98,7 @@ body {
         color: orange;
         border-radius: 10px;
         background-color: $verdatre;
-        font-family: cursive;
+        font-family:cursive;
       }
       .button_soon:hover {
         background-color: transparentize($verdatre, 0.15);

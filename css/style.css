@@ -39,15 +39,21 @@ body {
         body main .list_menu a article {
           height: 100%;
           display: flex;
-          flex-direction: column;
-          font-family: cursive; }
+          flex-direction: column; }
           body main .list_menu a article h2 {
+            transition: all 400ms ease-in-out;
+            transform: scale(0.7);
             margin: auto;
             padding: 0;
-            text-align: center; }
-      body main .list_menu a:hover {
-        width: 41%;
-        height: auto; }
+            text-align: center;
+            font-family: 'Devonshire', cursive; }
+            body main .list_menu a article h2 span {
+              font-family: cursive; }
+            body main .list_menu a article h2 i {
+              color: red; }
+      body main .list_menu a:hover h2 {
+        transform: scale(1);
+        opacity: 0.5; }
       body main .list_menu .menu_la_note_enchantee {
         background-color: #FBBBBB;
         margin-right: 5%; }
