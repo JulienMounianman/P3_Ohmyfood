@@ -42,23 +42,45 @@ body {
         font-size: 4em; }
       body main article h2 {
         text-align: center;
-        font-family: 'Devonshire', cursive; }
+        font-family: 'Devonshire', cursive;
+        color: #762008; }
       body main article div {
-        height: 100%;
         margin: auto; }
-        body main article div table {
-          margin: auto;
-          height: 25%; }
-          body main article div table thead tr th {
-            border-bottom-color: #762008;
-            border-bottom-style: solid;
-            border-bottom-width: medium; }
-          body main article div table tbody {
-            vertical-align: middle; }
-        body main article div h3 {
-          font-family: 'Devonshire', cursive; }
-          body main article div h3 i {
-            font-size: 2em; }
+        body main article div section {
+          display: block;
+          text-align: center; }
+          body main article div section h3 {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            color: #762008; }
+          body main article div section h3::before {
+            content: "";
+            display: block;
+            width: 45%;
+            border-bottom: 2px solid #762008; }
+          body main article div section h3::after {
+            content: "";
+            border-bottom: 2px solid #762008;
+            display: block;
+            width: 45%; }
+          body main article div section p {
+            margin: auto;
+            color: rgba(118, 32, 8, 0.8); }
+          body main article div section p[data-descr]::after {
+            content: attr(data-descr);
+            margin-left: 2%;
+            color: #762008; }
+          body main article div section span {
+            margin: 0;
+            width: auto; }
+      body main article h2 {
+        font-family: 'Devonshire', cursive;
+        color: #762008; }
+        body main article h2 i {
+          font-size: 2em; }
   body footer {
     height: 5%;
     display: flex;
