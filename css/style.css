@@ -45,27 +45,56 @@ body {
             transform: scale(0.7);
             margin: auto;
             padding: 0;
-            text-align: center;
-            font-family: 'Devonshire', cursive; }
+            text-align: center; }
             body main .list_menu a article h2 span {
               font-family: cursive; }
             body main .list_menu a article h2 i {
-              color: red; }
+              background: -webkit-linear-gradient(top left, red 30%, orange 70%);
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent; }
       body main .list_menu a:hover h2 {
         transform: scale(1);
         opacity: 0.5; }
       body main .list_menu .menu_la_note_enchantee {
         background-color: #FBBBBB;
         margin-right: 5%; }
+        body main .list_menu .menu_la_note_enchantee article h2 {
+          font-family: 'Devonshire', cursive;
+          color: #762008; }
       body main .list_menu .menu_le_chic_a_la_francaise {
         background-color: #FBD7F4; }
+        body main .list_menu .menu_le_chic_a_la_francaise article h2 {
+          font-family: 'Croissant One', cursive;
+          background: -webkit-linear-gradient(top left, #FAC37F 30%, #8172D9 70%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent; }
+          body main .list_menu .menu_le_chic_a_la_francaise article h2 span {
+            color: #FAC37F; }
       body main .list_menu .menu_le_delice_des_papilles {
         background-color: #EAEAEA;
         margin-right: 5%;
         margin-top: 5%; }
+        body main .list_menu .menu_le_delice_des_papilles article h2 {
+          font-family: 'Playfair Display', serif;
+          background: -webkit-linear-gradient(top left, #003D7D 30%, #007CFD 70%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent; }
+          body main .list_menu .menu_le_delice_des_papilles article h2 span {
+            color: #003D7D; }
       body main .list_menu .menu_la_palette_du_gout {
         background-color: white;
         margin-top: 5%; }
+        body main .list_menu .menu_la_palette_du_gout article h2 {
+          font-family: 'Kaushan Script', cursive;
+          background: -webkit-linear-gradient(top left, #4D811A 30%, #D6F1AA 70%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent; }
+          body main .list_menu .menu_la_palette_du_gout article h2 span {
+            color: #4D811A; }
     body main .soon {
       text-align: center;
       margin-top: 2%;

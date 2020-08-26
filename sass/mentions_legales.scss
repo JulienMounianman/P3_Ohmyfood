@@ -31,43 +31,7 @@ body {
     padding: 0 0 0 0;
     background-color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    h2 {
-      margin: auto;
-      padding: auto;
-    }
-    article {
-        box-shadow: 3px 3px 10px 3px $color_box_shadow;
-        background-color: $grisatre;
-        height: 90%;
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        i {
-          color: red;
-          font-size: 4em;
-        }
-        h2 {
-          text-align: center;
-        }
-        div {
-          height: 100%;
-          margin: auto;
-          table {
-            margin: auto;
-            height: 25%;
-            thead {
-            }
-            tbody {
-              vertical-align: middle;
-              tr {
-              }
-            }
-          }
-        }
       }
-    }
   footer {
     height: 5%;
     display: flex;

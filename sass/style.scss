@@ -54,12 +54,14 @@ body {
             margin: auto;
             padding: 0;
             text-align: center;
-            font-family: 'Devonshire', cursive;
             span {
               font-family:cursive;
             }
             i {
-              color: red;
+              background:-webkit-linear-gradient(top left, red 30%, orange 70%);
+              background-clip:text;
+              -webkit-background-clip:text;
+              color: transparent;
             }
           }
         }
@@ -71,18 +73,60 @@ body {
       .menu_la_note_enchantee {
         background-color: $rougeatre;
         margin-right: 5%;
+        article {
+          h2 {
+              font-family: 'Devonshire', cursive;
+              color: #762008;
+          }
+        }
       }
       .menu_le_chic_a_la_francaise {
         background-color: $rosatre;
+        article {
+          h2 {
+              font-family: 'Croissant One', cursive;
+              background:-webkit-linear-gradient(top left, #FAC37F 30%, #8172D9 70%);
+              background-clip:text;
+              -webkit-background-clip:text;
+              color:transparent;
+              span {
+                color: #FAC37F;
+              }
+          }
+        }
       }
       .menu_le_delice_des_papilles {
         background-color: $grisatre;
         margin-right: 5%;
         margin-top: 5%;
+        article {
+          h2 {
+              font-family: 'Playfair Display', serif;
+              background:-webkit-linear-gradient(top left, #003D7D 30%, #007CFD 70%);
+              background-clip:text;
+              -webkit-background-clip:text;
+              color:transparent;
+              span {
+                color: #003D7D;
+              }
+          }
+        }
       }
       .menu_la_palette_du_gout {
         background-color: white;
         margin-top: 5%;
+        article {
+          h2 {
+              font-family: 'Kaushan Script', cursive;
+              background:-webkit-linear-gradient(top left, #4D811A 30%, #D6F1AA 70%);
+              background-clip:text;
+              -webkit-background-clip:text;
+              color:transparent;
+              span {
+                color: #4D811A;
+              }
+          }
+        }
       }
     }
     .soon {

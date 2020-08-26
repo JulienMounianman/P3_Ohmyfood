@@ -22,32 +22,7 @@ body {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     background-color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column; }
-    body main h2 {
-      margin: auto;
-      padding: auto; }
-    body main article {
-      box-shadow: 3px 3px 10px 3px #D8D8D8;
-      background-color: #EAEAEA;
-      height: 90%;
-      width: 90%;
-      margin: auto;
-      text-align: center; }
-      body main article i {
-        color: red;
-        font-size: 4em; }
-      body main article h2 {
-        text-align: center; }
-      body main article div {
-        height: 100%;
-        margin: auto; }
-        body main article div table {
-          margin: auto;
-          height: 25%; }
-          body main article div table tbody {
-            vertical-align: middle; }
+    text-align: center; }
   body footer {
     height: 5%;
     display: flex;
@@ -68,4 +43,4 @@ body {
       body footer span a:hover {
         color: rgba(237, 172, 0, 0.85); }
 
-/*# sourceMappingURL=le_delice_des_papilles.css.map */
+/*# sourceMappingURL=mentions_legales.css.map */
