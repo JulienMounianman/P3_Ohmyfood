@@ -52,8 +52,11 @@ body {
         text-align: center;
         font-family: cursive;
         i {
-          color: red;
-          font-size: 4em;
+          background:-webkit-linear-gradient(top left, red 30%, orange 70%);
+          background-clip:text;
+          -webkit-background-clip:text;
+          color: transparent;
+          font-size: 3em;
         }
         h2 {
           text-align: center;
@@ -61,12 +64,12 @@ body {
           color: #762008;
         }
         div {
-          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           section {
             display: block;
-            text-align: center;
             h3 {
-              text-align: center;
               display: flex;
               flex-direction: row;
               margin-left: auto;
@@ -77,16 +80,23 @@ body {
               content: "";
               display: block;
               width:45%;
-              border-bottom: 2px solid #762008;
+              border-bottom: 3px solid #762008;
+              margin-left: 10%;
+              margin-right: 10%;
             }
             h3::after {
               content: "";
-              border-bottom: 2px solid #762008;
+              border-bottom: 3px solid #762008;
               display: block;
               width: 45%;
+              margin-left: 10%;
+              margin-right: 10%;
             }
             p {
-              margin: auto;
+              margin-left: 5%;
+              margin-right: 5%;
+              margin-top: 0;
+              margin-bottom: 0;
               color: transparentize(#762008, 0.2);
               }
               p[data-descr]::after {

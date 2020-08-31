@@ -42,19 +42,22 @@ body {
       text-align: center;
       font-family: cursive; }
       body main article i {
-        color: red;
-        font-size: 4em; }
+        background: -webkit-linear-gradient(top left, red 30%, orange 70%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 3em; }
       body main article h2 {
         text-align: center;
         font-family: 'Devonshire', cursive;
         color: #762008; }
       body main article div {
-        margin: auto; }
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
         body main article div section {
-          display: block;
-          text-align: center; }
+          display: block; }
           body main article div section h3 {
-            text-align: center;
             display: flex;
             flex-direction: row;
             margin-left: auto;
@@ -64,14 +67,21 @@ body {
             content: "";
             display: block;
             width: 45%;
-            border-bottom: 2px solid #762008; }
+            border-bottom: 3px solid #762008;
+            margin-left: 10%;
+            margin-right: 10%; }
           body main article div section h3::after {
             content: "";
-            border-bottom: 2px solid #762008;
+            border-bottom: 3px solid #762008;
             display: block;
-            width: 45%; }
+            width: 45%;
+            margin-left: 10%;
+            margin-right: 10%; }
           body main article div section p {
-            margin: auto;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 0;
+            margin-bottom: 0;
             color: rgba(118, 32, 8, 0.8); }
           body main article div section p[data-descr]::after {
             content: attr(data-descr);

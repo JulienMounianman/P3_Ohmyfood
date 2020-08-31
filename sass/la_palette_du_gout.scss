@@ -41,6 +41,11 @@ body {
     h2 {
       margin: auto;
       padding: auto;
+      font-family: 'Kaushan Script', cursive;
+      background:-webkit-linear-gradient(top left, #4D811A 30%, #D6F1AA 70%);
+      background-clip:text;
+      -webkit-background-clip:text;
+      color:transparent;
     }
     article {
         box-shadow: 3px 3px 10px 3px $color_box_shadow;
@@ -53,17 +58,46 @@ body {
           text-align: center;
         }
         div {
-          height: 100%;
-          margin: auto;
-          table {
-            margin: auto;
-            height: 25%;
-            thead {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          section {
+            display: block;
+            h3 {
+              display: flex;
+              flex-direction: row;
+              margin-left: auto;
+              margin-right: auto;
             }
-            tbody {
-              vertical-align: middle;
-              tr {
+            h3::before {
+              content: "";
+              display: block;
+              width:45%;
+              border-bottom: 3px solid #4D811A;
+              margin-left: 10%;
+              margin-right: 10%;
+            }
+            h3::after {
+              content: "";
+              border-bottom: 3px solid #4D811A;
+              display: block;
+              width: 45%;
+              margin-left: 10%;
+              margin-right: 10%;
+            }
+            p {
+              margin-left: 5%;
+              margin-right: 5%;
+              margin-top: 0;
+              margin-bottom: 0;
               }
+              p[data-descr]::after {
+                content: attr(data-descr);
+                margin-left: 2%;
+              }
+            span {
+              margin: 0;
+              width: auto;
             }
           }
         }

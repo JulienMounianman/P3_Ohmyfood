@@ -57,17 +57,80 @@ body {
           text-align: center;
         }
         div {
-          height: 100%;
-          margin: auto;
-          table {
-            margin: auto;
-            height: 25%;
-            thead {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          section {
+            display: block;
+            h3 {
+              display: flex;
+              flex-direction: row;
+              margin-left: auto;
+              margin-right: auto;
             }
-            tbody {
-              vertical-align: middle;
-              tr {
+            h3::before {
+              content: "";
+              display: block;
+              width:45%;
+              margin-left: 10%;
+              margin-right: 10%;
+            }
+            h3::after {
+              content: "";
+              display: block;
+              width: 45%;
+              margin-left: 10%;
+              margin-right: 10%;
+            }
+            p {
+              margin-left: 5%;
+              margin-right: 5%;
+              margin-top: 0;
+              margin-bottom: 0;
               }
+              p[data-descr]::after {
+                content: attr(data-descr);
+                margin-left: 2%;
+              }
+            span {
+              margin: 0;
+              width: auto;
+            }
+          }
+          .appetit {
+            color: #FAC37F;
+            h3 {
+
+            }
+            h3::before {
+              border-bottom: 3px solid  #FAC37F;
+            }
+            h3::after {
+              border-bottom: 3px solid  #FAC37F;
+            }
+          }
+          .papilles {
+            color: #745081;
+            h3 {
+
+            }
+            h3::before {
+              border-bottom: 3px solid  #745081;
+            }
+            h3::after {
+              border-bottom: 3px solid  #745081;
+            }
+          }
+          .sucrées {
+            color:#8172D9;
+            h3 {
+
+            }
+            h3::before {
+              border-bottom: 3px solid  #8172D9;
+            }
+            h3::after {
+              border-bottom: 3px solid  #8172D9;
             }
           }
         }
