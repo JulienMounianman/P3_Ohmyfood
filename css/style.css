@@ -2,14 +2,16 @@ body {
   height: 100vh;
   width: 70%;
   margin: auto;
-  background-color: grey; }
+  background-color: grey;
+  overflow-y: scroll;
+  overflow-x: hidden; }
   body header {
     height: 10%;
     background-color: #0E9C66;
     margin: 0;
     padding: 0; }
     body header h1 {
-      color: orange;
+      color: #EDAC00;
       text-align: center;
       margin: 0;
       padding: 0;
@@ -17,6 +19,10 @@ body {
       margin: 0;
       padding: 0;
       font-family: cursive; }
+      body header h1 a {
+        text-decoration: none;
+        margin: 0;
+        color: #EDAC00; }
   body main {
     height: 85%;
     margin: 0 0 0 0;
@@ -127,25 +133,29 @@ body {
     width: 20px; } }
   body footer {
     height: 5%;
-    display: flex;
-    background-color: #0E9C66;
-    color: orange;
-    justify-content: space-between;
-    margin: 0 0 0 0;
-    padding: 1%; }
-    body footer span {
-      display: flex; }
-      body footer span a {
-        justify-content: center;
-        font-family: cursive;
-        margin: auto;
-        text-align: center;
-        color: #EDAC00;
-        text-decoration: none; }
-      body footer span a:hover {
-        color: rgba(237, 172, 0, 0.85);
-        animation: shake 0.5s;
-        animation-iteration-count: infinite; }
+    position: fixed;
+    width: 70%;
+    background-color: #0E9C66; }
+    body footer div {
+      height: 100%;
+      display: flex;
+      color: orange;
+      justify-content: space-between;
+      margin: 0 0 0 0;
+      padding: 0; }
+      body footer div span {
+        display: flex; }
+        body footer div span a {
+          justify-content: center;
+          font-family: cursive;
+          margin: auto;
+          text-align: center;
+          color: #EDAC00;
+          text-decoration: none; }
+        body footer div span a:hover {
+          color: rgba(237, 172, 0, 0.85);
+          animation: shake 0.5s;
+          animation-iteration-count: infinite; }
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg); }
@@ -169,5 +179,9 @@ body {
     transform: translate(1px, 2px) rotate(0deg); }
   100% {
     transform: translate(1px, -2px) rotate(-1deg); } }
+      body footer div .Contactez_nous {
+        margin-right: 1%; }
+      body footer div .mentions_legales {
+        margin-left: 1%; }
 
 /*# sourceMappingURL=style.css.map */
