@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   height: 100vh;
   width: 70%;
@@ -36,7 +35,7 @@ body {
       -webkit-background-clip: text;
       color: transparent;
       margin: auto;
-      padding: auto; }
+      padding: 0; }
     body main article {
       box-shadow: 3px 3px 10px 3px #D8D8D8;
       background: linear-gradient(to bottom right, #FEE8D8, white);
@@ -92,11 +91,11 @@ body {
             border-bottom: 3px solid  #745081; }
           body main article div .papilles h3::after {
             border-bottom: 3px solid  #745081; }
-        body main article div .sucrées {
+        body main article div .sucrees {
           color: #8172D9; }
-          body main article div .sucrées h3::before {
+          body main article div .sucrees h3::before {
             border-bottom: 3px solid  #8172D9; }
-          body main article div .sucrées h3::after {
+          body main article div .sucrees h3::after {
             border-bottom: 3px solid  #8172D9; }
   body footer {
     height: 5%;

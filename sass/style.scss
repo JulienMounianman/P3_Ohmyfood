@@ -9,8 +9,6 @@ body {
   width: 70%;
   margin: auto;
   background-color: grey;
-  overflow-y:scroll;
-  overflow-x:hidden;
   header {
     height: 10%;
     background-color: $verdatre;
@@ -222,6 +220,60 @@ body {
       .mentions_legales {
         margin-left:1%;
       }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  body {
+    min-width: 400px;
+    header {
+
+    }
+    main {
+      .list_menu {
+        a {
+          article {
+              h2 {
+
+                i {
+
+                }
+              }
+          }
+        }
+        .menu_la_note_enchantee {
+          article {
+            h2 {
+              font-size: 0.8em;
+            }
+          }
+        }
+        .menu_le_chic_a_la_francaise {
+          article {
+            h2 {
+              font-size: 0.8em;
+            }
+          }
+        }
+        .menu_le_delice_des_papilles {
+          article {
+            h2 {
+              font-size: 0.8em;
+            }
+          }
+        }
+        .menu_la_palette_du_gout{
+          article {
+            h2 {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      width: 100%;
     }
   }
 }
