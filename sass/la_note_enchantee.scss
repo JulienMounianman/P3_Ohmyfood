@@ -178,3 +178,61 @@ body {
     }
   }
 }
+@media all and (max-width: 480px) {
+  body {
+    width: auto;
+    header{
+      height: 10%;
+      h1 {
+        font-size: 2em;
+      }
+    }
+    main {
+      height: 85%;
+      h2 {
+        font-size: 1em;
+        margin: 0;
+      }
+      article {
+          i {
+            font-size: 1.5em;
+          }
+          h2 {
+            font-size: 1em;
+          }
+          div {
+            section {
+              h3 {
+                font-size: 0.7em;
+                span {
+                }
+                span:hover {
+                }
+              }
+              h3::before {
+              }
+              h3::after {
+              }
+              p {
+                font-size: 0.6em;
+                }
+                p[data-descr]::after {
+                }
+              span {
+              }
+            }
+            }
+            h2 {
+              font-size: 1em;
+              i {
+                font-size: 1em;
+              }
+            }
+          }
+        }
+    footer {
+      width: 100%;
+      height: 5%;
+    }
+  }
+}
