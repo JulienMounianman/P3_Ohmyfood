@@ -227,13 +227,17 @@ body {
 
 @media all and (max-width: 480px) {
   body {
-    min-width: 400px;
+    min-width: 320px;
     header {
-
+      height: auto;
     }
     main {
+      height: 100%;
       .list_menu {
+        flex-direction: column;
+        justify-content: space-between;
         a {
+          height: 20%;
           article {
               h2 {
 
@@ -244,6 +248,8 @@ body {
           }
         }
         .menu_la_note_enchantee {
+          margin: 2% 2% 0 2%;
+          width: auto;
           article {
             h2 {
               font-size: 0.8em;
@@ -251,6 +257,8 @@ body {
           }
         }
         .menu_le_chic_a_la_francaise {
+          margin: 2% 2% 0 2%;
+          width: auto;
           article {
             h2 {
               font-size: 0.8em;
@@ -258,6 +266,8 @@ body {
           }
         }
         .menu_le_delice_des_papilles {
+          margin: 2% 2% 0 2%;
+          width: auto;
           article {
             h2 {
               font-size: 0.8em;
@@ -265,6 +275,8 @@ body {
           }
         }
         .menu_la_palette_du_gout{
+          margin: 2% 2% 0 2%;
+          width: auto;
           article {
             h2 {
               font-size: 0.8em;
@@ -274,6 +286,7 @@ body {
       }
     }
     footer {
+      height: auto;
       width: 100%;
     }
   }
