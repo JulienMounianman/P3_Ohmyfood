@@ -227,7 +227,7 @@ body {
 
 @media all and (max-width: 480px) {
   body {
-    min-width: 320px;
+    width: auto;
     header {
       height: auto;
     }

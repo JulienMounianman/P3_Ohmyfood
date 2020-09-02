@@ -185,7 +185,7 @@ body {
 
 @media all and (max-width: 480px) {
   body {
-    min-width: 320px; }
+    width: auto; }
     body header {
       height: auto; }
     body main {
