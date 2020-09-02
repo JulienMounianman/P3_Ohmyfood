@@ -29,25 +29,30 @@ body {
     text-align: center; }
   body footer {
     height: 5%;
-    display: flex;
-    background-color: #0E9C66;
-    color: orange;
-    justify-content: space-between;
-    margin: 0 0 0 0;
-    padding: 1%; }
-    body footer span {
-      display: flex; }
-      body footer span a {
-        justify-content: center;
-        font-family: cursive;
-        margin: auto;
-        text-align: center;
-        color: #EDAC00;
-        text-decoration: none; }
-      body footer span a:hover {
-        color: rgba(237, 172, 0, 0.85);
-        animation: shake 0.5s;
-        animation-iteration-count: infinite; }
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+    background-color: #0E9C66; }
+    body footer div {
+      height: 100%;
+      display: flex;
+      color: orange;
+      justify-content: space-between;
+      margin: 0 0 0 0;
+      padding: 0; }
+      body footer div span {
+        display: flex; }
+        body footer div span a {
+          justify-content: center;
+          font-family: cursive;
+          margin: auto;
+          text-align: center;
+          color: #EDAC00;
+          text-decoration: none; }
+        body footer div span a:hover {
+          color: rgba(237, 172, 0, 0.85);
+          animation: shake 0.5s;
+          animation-iteration-count: infinite; }
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg); }
@@ -71,5 +76,9 @@ body {
     transform: translate(1px, 2px) rotate(0deg); }
   100% {
     transform: translate(1px, -2px) rotate(-1deg); } }
+      body footer div .Contactez_nous {
+        margin-right: 1%; }
+      body footer div .mentions_legales {
+        margin-left: 1%; }
 
 /*# sourceMappingURL=mentions_legales.css.map */

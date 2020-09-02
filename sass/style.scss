@@ -32,12 +32,12 @@ body {
   }
   main {
     height: 85%;
-    margin: 0 0 0 0;
-    padding: 2% 0 0 0;
+    margin: 0;
+    padding: 2% 0 5% 0;
     background-color: white;
     text-align: center;
     .list_menu {
-      margin: 0 0 0 0;
+      margin: 0;
       height: 90%;
       display: flex;
       justify-content: center;
@@ -55,7 +55,7 @@ body {
           flex-direction: column;
           h2 {
             transition: all 400ms ease-in-out;
-            transform: scale(0.7);
+            transform: scale(1);
             margin: auto;
             padding: 0;
             text-align: center;
@@ -72,7 +72,7 @@ body {
         }
       }
       a:hover h2 {
-        transform: scale(1);
+        transform: scale(1.2);
         opacity: 0.5;
       }
       .menu_la_note_enchantee {
@@ -176,6 +176,7 @@ body {
   footer {
       height: 5%;
       position: fixed;
+      bottom: 0;
       width: 70%;
       background-color: $verdatre;
       div {

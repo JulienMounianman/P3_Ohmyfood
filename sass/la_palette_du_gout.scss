@@ -68,6 +68,14 @@ body {
               flex-direction: row;
               margin-left: auto;
               margin-right: auto;
+              span {
+                background: linear-gradient(to top, #4D811A 0%, #4D811A 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                text-decoration: none;
+                transition: background-size .8s;
+              }
+              span:hover {
+                background-size: 100% 100%;
+              }
             }
             h3::before {
               content: "";
@@ -104,40 +112,52 @@ body {
       }
     }
   footer {
-    height: 5%;
-    display: flex;
-    background-color: $verdatre;
-    color: orange;
-    justify-content: space-between;
-    margin: 0 0 0 0;
-    padding: 1%;
-    span {
+      height: 5%;
+      position: fixed;
+      bottom: 0;
+      width: 70%;
+      background-color: $verdatre;
+      div {
+      height: 100%;
       display: flex;
-      a {
-        justify-content: center;
-        font-family: cursive;
-        margin: auto;
-        text-align: center;
-        color: $orangeatre;
-        text-decoration: none;
+      color: orange;
+      justify-content: space-between;
+      margin: 0 0 0 0;
+      padding: 0;
+      span {
+        display: flex;
+        a {
+          justify-content: center;
+          font-family: cursive;
+          margin: auto;
+          text-align: center;
+          color: $orangeatre;
+          text-decoration: none;
+        }
+        a:hover {
+          color: transparentize($orangeatre, 0.15);
+          animation: shake 0.5s;
+          animation-iteration-count: infinite;
+        }
+        @keyframes shake {
+          0% { transform: translate(1px, 1px) rotate(0deg); }
+          10% { transform: translate(-1px, -2px) rotate(-1deg); }
+          20% { transform: translate(-3px, 0px) rotate(1deg); }
+          30% { transform: translate(3px, 2px) rotate(0deg); }
+          40% { transform: translate(1px, -1px) rotate(1deg); }
+          50% { transform: translate(-1px, 2px) rotate(-1deg); }
+          60% { transform: translate(-3px, 1px) rotate(0deg); }
+          70% { transform: translate(3px, 1px) rotate(-1deg); }
+          80% { transform: translate(-1px, -1px) rotate(1deg); }
+          90% { transform: translate(1px, 2px) rotate(0deg); }
+          100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
       }
-      a:hover {
-        color: transparentize($orangeatre, 0.15);
-        animation: shake 0.5s;
-        animation-iteration-count: infinite;
+      .Contactez_nous {
+        margin-right:1%;
       }
-      @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        20% { transform: translate(-3px, 0px) rotate(1deg); }
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        40% { transform: translate(1px, -1px) rotate(1deg); }
-        50% { transform: translate(-1px, 2px) rotate(-1deg); }
-        60% { transform: translate(-3px, 1px) rotate(0deg); }
-        70% { transform: translate(3px, 1px) rotate(-1deg); }
-        80% { transform: translate(-1px, -1px) rotate(1deg); }
-        90% { transform: translate(1px, 2px) rotate(0deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      .mentions_legales {
+        margin-left:1%;
       }
     }
   }
