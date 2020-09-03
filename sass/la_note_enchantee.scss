@@ -38,8 +38,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    h2 {
-      margin: auto;
+    .basic_title {
+      margin: 0;
       padding: 0;
       font-family:cursive;
     }
@@ -58,6 +58,8 @@ body {
           font-size: 3em;
         }
         h2 {
+          margin: auto;
+          padding: 0;
           text-align: center;
           font-family: 'Devonshire', cursive;
           color: #762008;
@@ -117,6 +119,8 @@ body {
           h2 {
             font-family: 'Devonshire', cursive;
             color: #762008;
+            margin: auto;
+            padding: 0;
             i {
               font-size: 2em;
             }
@@ -178,19 +182,20 @@ body {
   body {
     width: auto;
     header{
-      height: 10%;
+      height: 5%;
       h1 {
-        font-size: 2em;
+        font-size: 1em;
       }
     }
     main {
-      height: 85%;
-      h2 {
-        font-size: 1em;
-        margin: 0;
+      height: 90%;
+      .basic_title {
+        display: none;
       }
       article {
-          i {
+        height: 100%;
+        width: 100%;
+          i{
             font-size: 1.5em;
           }
           h2 {
@@ -228,7 +233,8 @@ body {
         }
     footer {
       width: 100%;
-      height: 5%;
+      height:5%;
+      font-size: 1em;
     }
   }
 }

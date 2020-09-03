@@ -81,4 +81,36 @@ body {
       body footer div .mentions_legales {
         margin-left: 1%; }
 
+@media all and (max-width: 480px) {
+  body {
+    width: auto; }
+    body header {
+      height: 5%; }
+      body header h1 {
+        font-size: 1em; }
+    body main {
+      height: 90%; }
+      body main h2 {
+        font-size: 1em;
+        margin: 0; }
+      body main article {
+        height: 100%;
+        width: 100%; }
+        body main article i {
+          font-size: 1.5em; }
+        body main article h2 {
+          font-size: 1em; }
+        body main article div section h3 {
+          font-size: 0.7em; }
+        body main article div section p {
+          font-size: 0.6em; }
+        body main article h2 {
+          font-size: 1em; }
+          body main article h2 i {
+            font-size: 1em; }
+    body footer {
+      width: 100%;
+      height: 5%;
+      font-size: 1em; } }
+
 /*# sourceMappingURL=mentions_legales.css.map */

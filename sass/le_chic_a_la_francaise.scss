@@ -38,13 +38,9 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    h2 {
-      background:-webkit-linear-gradient(top left, #FAC37F 30%, #8172D9 70%);
-      background-clip:text;
-      -webkit-background-clip:text;
-      color:transparent;
-      margin: auto;
-      padding: 0;
+    .basic_title {
+      font-family: cursive;
+      margin: 0;
     }
     article {
         box-shadow: 3px 3px 10px 3px $color_box_shadow;
@@ -55,6 +51,12 @@ body {
         text-align: center;
         h2 {
           text-align: center;
+          background:-webkit-linear-gradient(top left, #FAC37F 30%, #8172D9 70%);
+          background-clip:text;
+          -webkit-background-clip:text;
+          color:transparent;
+          margin: auto;
+          padding: 0;
         }
         div {
           display: flex;
@@ -192,6 +194,66 @@ body {
       .mentions_legales {
         margin-left:1%;
       }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  body {
+    width: auto;
+    header{
+      height: 5%;
+      h1 {
+        font-size: 1em;
+      }
+    }
+    main {
+      height: 90%;
+      .basic_title {
+        display: none;
+      }
+      article {
+        height: 100%;
+        width: 100%;
+          i{
+            font-size: 1.5em;
+          }
+          h2 {
+            font-size: 1em;
+          }
+          div {
+            section {
+              h3 {
+                font-size: 0.7em;
+                span {
+                }
+                span:hover {
+                }
+              }
+              h3::before {
+              }
+              h3::after {
+              }
+              p {
+                font-size: 0.6em;
+                }
+                p[data-descr]::after {
+                }
+              span {
+              }
+            }
+            }
+            h2 {
+              font-size: 1em;
+              i {
+                font-size: 1em;
+              }
+            }
+          }
+        }
+    footer {
+      width: 100%;
+      height:5%;
+      font-size: 1em;
     }
   }
 }

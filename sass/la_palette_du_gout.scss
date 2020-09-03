@@ -38,14 +38,9 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    h2 {
-      margin: auto;
-      padding: 0;
-      font-family: 'Kaushan Script', cursive;
-      background:-webkit-linear-gradient(top left, #4D811A 30%, #D6F1AA 70%);
-      background-clip:text;
-      -webkit-background-clip:text;
-      color:transparent;
+    .basic_title {
+      font-family: cursive;
+      margin: 0;
     }
     article {
         box-shadow: 3px 3px 10px 3px $color_box_shadow;
@@ -56,6 +51,13 @@ body {
         text-align: center;
         h2 {
           text-align: center;
+          margin: auto;
+          padding: 0;
+          font-family: 'Kaushan Script', cursive;
+          background:-webkit-linear-gradient(top left, #4D811A 30%, #D6F1AA 70%);
+          background-clip:text;
+          -webkit-background-clip:text;
+          color:transparent;
         }
         div {
           display: flex;
@@ -159,6 +161,66 @@ body {
       .mentions_legales {
         margin-left:1%;
       }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  body {
+    width: auto;
+    header{
+      height: 5%;
+      h1 {
+        font-size: 1em;
+      }
+    }
+    main {
+      height: 90%;
+      .basic_title {
+        display: none;
+      }
+      article {
+        height: 100%;
+        width: 100%;
+          i{
+            font-size: 1.5em;
+          }
+          h2 {
+            font-size: 1em;
+          }
+          div {
+            section {
+              h3 {
+                font-size: 0.7em;
+                span {
+                }
+                span:hover {
+                }
+              }
+              h3::before {
+              }
+              h3::after {
+              }
+              p {
+                font-size: 0.6em;
+                }
+                p[data-descr]::after {
+                }
+              span {
+              }
+            }
+            }
+            h2 {
+              font-size: 1em;
+              i {
+                font-size: 1em;
+              }
+            }
+          }
+        }
+    footer {
+      width: 100%;
+      height:5%;
+      font-size: 1em;
     }
   }
 }

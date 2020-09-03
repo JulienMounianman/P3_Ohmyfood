@@ -29,13 +29,9 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column; }
-    body main h2 {
-      background: -webkit-linear-gradient(top left, #FAC37F 30%, #8172D9 70%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      margin: auto;
-      padding: 0; }
+    body main .basic_title {
+      font-family: cursive;
+      margin: 0; }
     body main article {
       box-shadow: 3px 3px 10px 3px #D8D8D8;
       background: linear-gradient(to bottom right, #FEE8D8, white);
@@ -44,7 +40,13 @@ body {
       margin: auto;
       text-align: center; }
       body main article h2 {
-        text-align: center; }
+        text-align: center;
+        background: -webkit-linear-gradient(top left, #FAC37F 30%, #8172D9 70%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin: auto;
+        padding: 0; }
       body main article div {
         display: flex;
         flex-direction: column;
@@ -156,5 +158,36 @@ body {
         margin-right: 1%; }
       body footer div .mentions_legales {
         margin-left: 1%; }
+
+@media all and (max-width: 480px) {
+  body {
+    width: auto; }
+    body header {
+      height: 5%; }
+      body header h1 {
+        font-size: 1em; }
+    body main {
+      height: 90%; }
+      body main .basic_title {
+        display: none; }
+      body main article {
+        height: 100%;
+        width: 100%; }
+        body main article i {
+          font-size: 1.5em; }
+        body main article h2 {
+          font-size: 1em; }
+        body main article div section h3 {
+          font-size: 0.7em; }
+        body main article div section p {
+          font-size: 0.6em; }
+        body main article h2 {
+          font-size: 1em; }
+          body main article h2 i {
+            font-size: 1em; }
+    body footer {
+      width: 100%;
+      height: 5%;
+      font-size: 1em; } }
 
 /*# sourceMappingURL=le_chic_a_la_francaise.css.map */

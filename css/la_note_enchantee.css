@@ -29,8 +29,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column; }
-    body main h2 {
-      margin: auto;
+    body main .basic_title {
+      margin: 0;
       padding: 0;
       font-family: cursive; }
     body main article {
@@ -47,6 +47,8 @@ body {
         color: transparent;
         font-size: 3em; }
       body main article h2 {
+        margin: auto;
+        padding: 0;
         text-align: center;
         font-family: 'Devonshire', cursive;
         color: #762008; }
@@ -93,7 +95,9 @@ body {
             width: auto; }
       body main article h2 {
         font-family: 'Devonshire', cursive;
-        color: #762008; }
+        color: #762008;
+        margin: auto;
+        padding: 0; }
         body main article h2 i {
           font-size: 2em; }
   body footer {
@@ -154,28 +158,31 @@ body {
   body {
     width: auto; }
     body header {
-      height: 10%; }
+      height: 5%; }
       body header h1 {
-        font-size: 2em; }
+        font-size: 1em; }
     body main {
-      height: 85%; }
-      body main h2 {
-        font-size: 1em;
-        margin: 0; }
-      body main article i {
-        font-size: 1.5em; }
-      body main article h2 {
-        font-size: 1em; }
-      body main article div section h3 {
-        font-size: 0.7em; }
-      body main article div section p {
-        font-size: 0.6em; }
-      body main article h2 {
-        font-size: 1em; }
-        body main article h2 i {
+      height: 90%; }
+      body main .basic_title {
+        display: none; }
+      body main article {
+        height: 100%;
+        width: 100%; }
+        body main article i {
+          font-size: 1.5em; }
+        body main article h2 {
           font-size: 1em; }
+        body main article div section h3 {
+          font-size: 0.7em; }
+        body main article div section p {
+          font-size: 0.6em; }
+        body main article h2 {
+          font-size: 1em; }
+          body main article h2 i {
+            font-size: 1em; }
     body footer {
       width: 100%;
-      height: 5%; } }
+      height: 5%;
+      font-size: 1em; } }
 
 /*# sourceMappingURL=la_note_enchantee.css.map */

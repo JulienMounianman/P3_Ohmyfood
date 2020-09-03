@@ -215,6 +215,11 @@ body {
           width: auto; }
           body main .list_menu .menu_la_palette_du_gout article h2 {
             font-size: 0.8em; }
+      body main .soon .button_soon {
+        font-size: 0.5em;
+        width: 30%;
+        line-height: 1.5;
+        padding: 0; }
     body footer {
       height: auto;
       width: 100%; } }
