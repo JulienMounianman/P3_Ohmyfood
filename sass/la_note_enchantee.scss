@@ -49,7 +49,6 @@ body {
         height: 90%;
         width: 90%;
         margin: auto;
-        text-align: center;
         font-family: cursive;
         i {
           background:-webkit-linear-gradient(top left, red 30%, orange 70%);
@@ -66,19 +65,18 @@ body {
         div {
           display: flex;
           flex-direction: column;
-          justify-content: center;
           section {
             display: block;
             h3 {
               display: flex;
               flex-direction: row;
-              margin-left: auto;
-              margin-right: auto;
               color: #762008;
               span {
                 background: linear-gradient(to top, #762008 0%, #762008 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
                 text-decoration: none;
                 transition: background-size .8s;
+                width: 25%;
+
               }
               span:hover {
                 background-size: 100% 100%;
@@ -89,16 +87,14 @@ body {
               display: block;
               width:45%;
               border-bottom: 3px solid #762008;
-              margin-left: 10%;
-              margin-right: 10%;
+              margin: 0 2% 0 5%;
             }
             h3::after {
               content: "";
               border-bottom: 3px solid #762008;
               display: block;
               width: 45%;
-              margin-left: 10%;
-              margin-right: 10%;
+              margin: 0 5% 0 2%;
             }
             p {
               margin-left: 5%;
