@@ -112,7 +112,8 @@ body {
         color: orange;
         border-radius: 10px;
         background-color: #0E9C66;
-        font-family: cursive; }
+        font-family: cursive;
+        width: 35%; }
       body main .soon .button_soon:hover {
         background-color: rgba(14, 156, 102, 0.85); }
       body main .soon .button_soon::after {
