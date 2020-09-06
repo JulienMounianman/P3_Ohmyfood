@@ -87,7 +87,8 @@ body {
           -webkit-background-clip: text;
           color: transparent; }
           body main .list_menu .menu_le_delice_des_papilles article h2 span {
-            color: #003D7D; }
+            color: #007CFD;
+            font-family: 'Handlee', cursive; }
       body main .list_menu .menu_la_palette_du_gout {
         background-color: white;
         margin-top: 5%; }
@@ -98,7 +99,8 @@ body {
           -webkit-background-clip: text;
           color: transparent; }
           body main .list_menu .menu_la_palette_du_gout article h2 span {
-            color: #4D811A; }
+            color: #4D811A;
+            font-family: 'Handlee', cursive; }
     body main .soon {
       text-align: center;
       margin-top: 2%;
