@@ -6,7 +6,7 @@ $rosatre: #FBD7F4;
 $color_box_shadow: #D8D8D8;
 body {
   height: 100vh;
-  width: 70%;
+  width: 80%;
   margin: auto;
   background-color: grey;
   header {
@@ -55,7 +55,7 @@ body {
           flex-direction: column;
           h2 {
             transition: all 400ms ease-in-out;
-            transform: scale(1);
+            transform: scale(0.9);
             margin: auto;
             padding: 0;
             text-align: center;
@@ -72,7 +72,7 @@ body {
         }
       }
       a:hover h2 {
-        transform: scale(1.2);
+        transform: scale(1.1);
         opacity: 0.5;
       }
       .menu_la_note_enchantee {
@@ -148,7 +148,7 @@ body {
         border-radius: 10px;
         background-color: $verdatre;
         font-family:cursive;
-        width: 35%;
+        width: 170px;
       }
       .button_soon:hover {
         background-color: transparentize($verdatre, 0.15);
@@ -178,7 +178,7 @@ body {
       height: 5%;
       position: fixed;
       bottom: 0;
-      width: 70%;
+      width: 80%;
       background-color: $verdatre;
       div {
       height: 100%;
