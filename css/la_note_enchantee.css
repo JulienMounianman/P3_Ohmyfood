@@ -4,7 +4,7 @@ body {
   margin: auto;
   background-color: grey; }
   body header {
-    height: 10%;
+    height: 5%;
     background-color: #0E9C66;
     margin: 0;
     padding: 0; }
@@ -13,7 +13,7 @@ body {
       text-align: center;
       margin: 0;
       padding: 0;
-      font-size: 3em;
+      font-size: 2em;
       margin: 0;
       padding: 0;
       font-family: cursive; }
@@ -22,13 +22,11 @@ body {
         margin: 0;
         color: #EDAC00; }
   body main {
-    height: 85%;
+    height: 88%;
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 2%;
     background-color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column; }
+    text-align: center; }
     body main .basic_title {
       margin: 0;
       padding: 0;
@@ -36,8 +34,8 @@ body {
     body main article {
       box-shadow: 3px 3px 10px 3px #D8D8D8;
       background-color: #FFB4B4;
-      height: 90%;
-      width: 90%;
+      height: 94%;
+      width: auto;
       margin: auto;
       font-family: cursive; }
       body main article i {
@@ -65,7 +63,7 @@ body {
               background: linear-gradient(to top, #762008 0%, #762008 10%, transparent 10.01%) no-repeat left bottom/0 100%;
               text-decoration: none;
               transition: background-size .8s;
-              width: 25%; }
+              width: 30%; }
             body main article div section h3 span:hover {
               background-size: 100% 100%; }
           body main article div section h3::before {
@@ -73,33 +71,40 @@ body {
             display: block;
             width: 45%;
             border-bottom: 3px solid #762008;
-            margin: 0 2% 0 5%; }
+            margin: 0 4% 0 5%; }
           body main article div section h3::after {
             content: "";
             border-bottom: 3px solid #762008;
             display: block;
             width: 45%;
-            margin: 0 5% 0 2%; }
+            margin: 0 5% 0 4%; }
+          body main article div section div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; }
+            body main article div section div p {
+              width: 75%;
+              margin-left: 5%; }
+            body main article div section div span {
+              width: 15%;
+              color: rgba(118, 32, 8, 0.8); }
           body main article div section p {
-            margin-left: 5%;
-            margin-right: 5%;
+            text-align: left;
             margin-top: 0;
             margin-bottom: 0;
+            margin-left: 5%;
             color: rgba(118, 32, 8, 0.8); }
-          body main article div section p[data-descr]::after {
-            content: attr(data-descr);
-            margin-left: 2%;
-            color: #762008; }
           body main article div section span {
             margin: 0;
             width: auto; }
-      body main article h2 {
-        font-family: 'Devonshire', cursive;
-        color: #762008;
-        margin: auto;
-        padding: 0; }
-        body main article h2 i {
-          font-size: 2em; }
+        body main article div h2 {
+          font-family: 'Devonshire', cursive;
+          color: #762008;
+          margin: auto;
+          margin-top: 2%;
+          padding: 0; }
+          body main article div h2 i {
+            font-size: 2em; }
   body footer {
     height: 5%;
     position: fixed;
@@ -162,11 +167,10 @@ body {
       body header h1 {
         font-size: 1em; }
     body main {
-      height: 90%; }
+      height: 100%; }
       body main .basic_title {
         display: none; }
       body main article {
-        height: 100%;
         width: 100%; }
         body main article i {
           font-size: 1.5em; }
@@ -174,6 +178,8 @@ body {
           font-size: 1em; }
         body main article div section h3 {
           font-size: 0.7em; }
+        body main article div section div span {
+          font-size: 0.6em; }
         body main article div section p {
           font-size: 0.6em; }
         body main article h2 {
@@ -184,5 +190,59 @@ body {
       width: 100%;
       height: 5%;
       font-size: 1em; } }
+@media all and (min-width: 500px) and (max-width: 1200px) {
+  body header {
+    height: 5%; }
+    body header h1 {
+      font-size: 1.5em; }
+  body main {
+    height: 90%; }
+    body main article i {
+      font-size: 1.5em; }
+    body main article h2 {
+      font-size: 1.5em; }
+    body main article div section div p {
+      font-size: 1em; }
+    body main article div section div span {
+      font-size: 1em; }
+    body main article div section p {
+      font-size: 1em; } }
+@media all and (min-width: 1200px) and (max-width: 1600px) {
+  body header h1 {
+    font-size: 1.5em; }
+  body main article div section div p {
+    font-size: 1.2em; }
+  body main article div section div span {
+    font-size: 1.2em; }
+  body main article div section p {
+    font-size: 1.2em; } }
+@media all and (min-width: 1600px) {
+  body main article div section h3 {
+    font-size: 1.4em; }
+  body main article div section div p {
+    font-size: 1.3em; }
+  body main article div section div span {
+    font-size: 1.3em; }
+  body main article div section p {
+    font-size: 1.3em; } }
+@media all and (min-width: 2000px) {
+  body header h1 {
+    font-size: 2em; }
+  body main .basic_title {
+    font-size: 2em; }
+  body main article i {
+    font-size: 2.1em; }
+  body main article h2 {
+    font-size: 2.1em; }
+  body main article div section h3 {
+    font-size: 2em; }
+  body main article div section div p {
+    font-size: 1.9em; }
+  body main article div section div span {
+    font-size: 1.9em; }
+  body main article div section p {
+    font-size: 1.9em; }
+  body footer {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=la_note_enchantee.css.map */

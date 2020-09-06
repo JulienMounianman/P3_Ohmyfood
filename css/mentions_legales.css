@@ -4,7 +4,7 @@ body {
   margin: auto;
   background-color: grey; }
   body header {
-    height: 10%;
+    height: 5%;
     background-color: #0E9C66;
     margin: 0;
     padding: 0; }
@@ -13,7 +13,7 @@ body {
       text-align: center;
       margin: 0;
       padding: 0;
-      font-size: 3em;
+      font-size: 2em;
       margin: 0;
       padding: 0;
       font-family: cursive; }
@@ -22,9 +22,9 @@ body {
         margin: 0;
         color: #EDAC00; }
   body main {
-    height: 85%;
+    height: 88%;
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 2%;
     background-color: white;
     text-align: center; }
   body footer {
@@ -112,5 +112,59 @@ body {
       width: 100%;
       height: 5%;
       font-size: 1em; } }
+@media all and (min-width: 500px) and (max-width: 1200px) {
+  body header {
+    height: 5%; }
+    body header h1 {
+      font-size: 1.5em; }
+  body main {
+    height: 90%; }
+    body main article i {
+      font-size: 1.5em; }
+    body main article h2 {
+      font-size: 1.5em; }
+    body main article div section div p {
+      font-size: 1em; }
+    body main article div section div span {
+      font-size: 1em; }
+    body main article div section p {
+      font-size: 1em; } }
+@media all and (min-width: 1200px) and (max-width: 1600px) {
+  body header h1 {
+    font-size: 1.5em; }
+  body main article div section div p {
+    font-size: 1.2em; }
+  body main article div section div span {
+    font-size: 1.2em; }
+  body main article div section p {
+    font-size: 1.2em; } }
+@media all and (min-width: 1600px) {
+  body main article div section h3 {
+    font-size: 1.4em; }
+  body main article div section div p {
+    font-size: 1.3em; }
+  body main article div section div span {
+    font-size: 1.3em; }
+  body main article div section p {
+    font-size: 1.3em; } }
+@media all and (min-width: 2000px) {
+  body header h1 {
+    font-size: 2em; }
+  body main .basic_title {
+    font-size: 2em; }
+  body main article i {
+    font-size: 2.1em; }
+  body main article h2 {
+    font-size: 2.1em; }
+  body main article div section h3 {
+    font-size: 2em; }
+  body main article div section div p {
+    font-size: 1.9em; }
+  body main article div section div span {
+    font-size: 1.9em; }
+  body main article div section p {
+    font-size: 1.9em; }
+  body footer {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=mentions_legales.css.map */

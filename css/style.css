@@ -217,12 +217,22 @@ body {
           body main .list_menu .menu_la_palette_du_gout article h2 {
             font-size: 0.8em; }
       body main .soon .button_soon {
-        font-size: 0.5em;
-        width: 30%;
-        line-height: 1.5;
+        font-size: 0.8em;
+        width: 38%;
+        line-height: 2;
         padding: 0; }
     body footer {
       height: auto;
       width: 100%; } }
+@media all and (min-width: 2000px) {
+  body header h1 {
+    font-size: 4em; }
+  body main .list_menu a article h2 {
+    font-size: 2em; }
+  body main .soon .button_soon {
+    width: 300px;
+    font-size: 1.8em; }
+  body footer {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=style.css.map */

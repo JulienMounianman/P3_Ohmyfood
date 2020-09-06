@@ -10,7 +10,7 @@ body {
   margin: auto;
   background-color: grey;
   header {
-    height: 10%;
+    height: 5%;
     background-color: $verdatre;
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
       text-align: center;
       margin: 0;
       padding: 0;
-      font-size: 3em;
+      font-size: 2em;
       margin: 0;
       padding: 0;
       font-family: cursive;
@@ -31,9 +31,9 @@ body {
     }
   }
   main {
-    height: 85%;
+    height: 88%;
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 2%;
     background-color: white;
     text-align: center;
     display: flex;
@@ -49,6 +49,7 @@ body {
         width: 90%;
         margin: auto;
         text-align: center;
+        font-family: cursive;
         i {
           color: red;
           font-size: 4em;
@@ -79,6 +80,7 @@ body {
                 background: linear-gradient(to top, #003D7D 0%, #003D7D 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
                 text-decoration: none;
                 transition: background-size .8s;
+                width: 30%;
               }
               span:hover {
                 background-size: 100% 100%;
@@ -89,26 +91,32 @@ body {
               display: block;
               width:45%;
               border-bottom: 3px solid #003D7D;
-              margin-left: 10%;
-              margin-right: 10%;
+              margin: 0 4% 0 5%;
             }
             h3::after {
               content: "";
               border-bottom: 3px solid #003D7D;
               display: block;
               width: 45%;
-              margin-left: 10%;
-              margin-right: 10%;
+              margin: 0 4% 0 5%;
+            }
+            div {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              p {
+                width: 75%;
+                margin-left:5%;
+              }
+              span {
+                width: 15%;
+              }
             }
             p {
-              margin-left: 5%;
-              margin-right: 5%;
+              text-align: left;
               margin-top: 0;
               margin-bottom: 0;
-              }
-              p[data-descr]::after {
-                content: attr(data-descr);
-                margin-left: 2%;
+              margin-left: 5%;
               }
             span {
               margin: 0;
@@ -226,6 +234,233 @@ body {
       width: 100%;
       height:5%;
       font-size: 1em;
+    }
+  }
+}
+
+@media all and (min-width: 500px) and (max-width:1200px){
+  body {
+    header{
+      height: 5%;
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+    main {
+      height: 90%;
+      .basic_title {
+      }
+      article {
+          i{
+            font-size: 1.5em;
+          }
+          h2 {
+            font-size: 1.5em;
+          }
+          div {
+            section {
+              h3 {
+
+                span {
+                }
+                span:hover {
+                }
+              }
+              h3::before {
+              }
+              h3::after {
+              }
+              div {
+                p {
+                  font-size: 1em;
+                }
+                span {
+                  font-size: 1em;
+                }
+              }
+              p {
+                  font-size: 1em;
+                }
+              span {
+              }
+            }
+            }
+            h2 {
+
+              i {
+
+              }
+            }
+          }
+        }
+    footer {
+    }
+  }
+}
+@media all and (min-width: 1200px) and (max-width:1600px){
+  body {
+    header{
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+    main {
+      .basic_title {
+      }
+      article {
+          i{
+          }
+          h2 {
+          }
+          div {
+            section {
+              h3 {
+
+                span {
+                }
+                span:hover {
+                }
+              }
+              h3::before {
+              }
+              h3::after {
+              }
+              div {
+                p {
+                  font-size: 1.2em;
+                }
+                span {
+                  font-size: 1.2em;
+                }
+              }
+              p {
+                  font-size: 1.2em;
+                }
+              span {
+              }
+            }
+            }
+            h2 {
+
+              i {
+
+              }
+            }
+          }
+        }
+    footer {
+    }
+  }
+}
+@media all and (min-width: 1600px) {
+  body {
+    header{
+      h1 {
+      }
+    }
+    main {
+      .basic_title {
+      }
+      article {
+          i{
+          }
+          h2 {
+          }
+          div {
+            section {
+              h3 {
+                  font-size: 1.4em;
+                span {
+                }
+                span:hover {
+                }
+              }
+              h3::before {
+              }
+              h3::after {
+              }
+              div {
+                p {
+                  font-size: 1.3em;
+                }
+                span {
+                  font-size: 1.3em;
+                }
+              }
+              p {
+                  font-size: 1.3em;
+                }
+              span {
+              }
+            }
+            }
+            h2 {
+
+              i {
+
+              }
+            }
+          }
+        }
+    footer {
+    }
+  }
+}
+@media all and (min-width: 2000px) {
+  body {
+    header{
+      h1 {
+        font-size: 2em;
+      }
+    }
+    main {
+      .basic_title {
+        font-size: 2em;
+      }
+      article {
+          i{
+            font-size: 2.1em;
+          }
+          h2 {
+            font-size: 2.1em;
+          }
+          div {
+            section {
+              h3 {
+                  font-size: 2em;
+                span {
+                }
+                span:hover {
+                }
+              }
+              h3::before {
+              }
+              h3::after {
+              }
+              div {
+                p {
+                  font-size: 1.9em;
+                }
+                span {
+                  font-size: 1.9em;
+                }
+              }
+              p {
+                  font-size: 1.9em;
+                }
+              span {
+              }
+            }
+            }
+            h2 {
+              i {
+
+              }
+            }
+          }
+        }
+    footer {
+      font-size: 2em;
     }
   }
 }
