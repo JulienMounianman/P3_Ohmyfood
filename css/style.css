@@ -122,16 +122,12 @@ body {
         overflow: hidden;
         display: inline-block;
         vertical-align: bottom;
-        -webkit-animation: ellipsis steps(4, end) 1500ms infinite;
-        animation: ellipsis steps(4, end) 1500ms infinite;
+        animation: ellipsis steps(4, end) 2500ms infinite;
         content: "\2026";
         width: 0px; }
 @keyframes ellipsis {
   to {
-    width: 20px; } }
-@-webkit-keyframes ellipsis {
-  to {
-    width: 20px; } }
+    width: 15px; } }
   body footer {
     height: 5%;
     position: fixed;
